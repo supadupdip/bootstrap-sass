@@ -6,8 +6,8 @@
 // Headings
 // -------------------------
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1.boot, h2.boot, h3.boot, h4.boot, h5.boot, h6.boot,
+.boot.h1, .boot.h2, .boot.h3, .boot.h4, .boot.h5, .boot.h6 {
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
@@ -21,9 +21,9 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3 {
+h1.boot, .boot.h1,
+h2.boot, .boot.h2,
+h3.boot, .boot.h3 {
   margin-top: $line-height-computed;
   margin-bottom: ($line-height-computed / 2);
 
@@ -32,9 +32,9 @@ h3, .h3 {
     font-size: 65%;
   }
 }
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h4.boot, .boot.h4,
+h5.boot, .boot.h5,
+h6.boot, .boot.h6 {
   margin-top: ($line-height-computed / 2);
   margin-bottom: ($line-height-computed / 2);
 
@@ -44,18 +44,18 @@ h6, .h6 {
   }
 }
 
-h1, .h1 { font-size: $font-size-h1; }
-h2, .h2 { font-size: $font-size-h2; }
-h3, .h3 { font-size: $font-size-h3; }
-h4, .h4 { font-size: $font-size-h4; }
-h5, .h5 { font-size: $font-size-h5; }
-h6, .h6 { font-size: $font-size-h6; }
+h1.boot, .boot.h1 { font-size: $font-size-h1; }
+h2.boot, .boot.h2 { font-size: $font-size-h2; }
+h3.boot, .boot.h3 { font-size: $font-size-h3; }
+h4.boot, .boot.h4 { font-size: $font-size-h4; }
+h5.boot, .boot.h5 { font-size: $font-size-h5; }
+h6.boot, .boot.h6 { font-size: $font-size-h6; }
 
 
 // Body text
 // -------------------------
 
-p {
+p.boot {
   margin: 0 0 ($line-height-computed / 2);
 }
 
@@ -145,8 +145,8 @@ mark,
 // -------------------------
 
 // Unordered and Ordered lists
-ul,
-ol {
+ul.boot,
+ol.boot {
   margin-top: 0;
   margin-bottom: ($line-height-computed / 2);
   ul,
@@ -232,15 +232,15 @@ abbr[data-original-title] {
 }
 
 // Blockquotes
-blockquote {
+blockquote.boot {
   padding: ($line-height-computed / 2) $line-height-computed;
   margin: 0 0 $line-height-computed;
   font-size: $blockquote-font-size;
   border-left: 5px solid $blockquote-border-color;
 
-  p,
-  ul,
-  ol {
+  p.boot,
+  ul.boot,
+  ol.boot {
     &:last-child {
       margin-bottom: 0;
     }
@@ -248,7 +248,7 @@ blockquote {
 
   // Note: Deprecated small and .small as of v3.1.0
   // Context: https://github.com/twbs/bootstrap/issues/11660
-  footer,
+  footer.boot,
   small,
   .small {
     display: block;
@@ -265,8 +265,8 @@ blockquote {
 // Opposite alignment of blockquote
 //
 // Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
-.blockquote-reverse,
-blockquote.pull-right {
+.boot.blockquote-reverse,
+blockquote.pull-right.boot {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid $blockquote-border-color;
@@ -274,7 +274,7 @@ blockquote.pull-right {
   text-align: right;
 
   // Account for citation
-  footer,
+  footer.boot,
   small,
   .small {
     &:before { content: ''; }
